@@ -1,88 +1,811 @@
 <!DOCTYPE html>
+
 <html lang="bn">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>জিয়া মোবাইল কেয়ার | ZIA MOBILE CARE</title>
-<meta name="description" content="জিয়া মোবাইল কেয়ার — মোবাইল সফটওয়্যার ও হার্ডওয়্যার সার্ভিস।">
+
+<title>জিয়া মোবাইল কেয়ার | ZIA MOBILE CARE</title>
+
+<meta name="description"
+
+content="জিয়া মোবাইল কেয়ার — মোবাইল সফটওয়্যার ও হার্ডওয়্যার সার্ভিস। রিয়াদ, শিফা সানাইয়া।">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,"Noto Sans Bengali",sans-serif;background:#f5f8fc;color:#102a43;line-height:1.6}
-header{background:linear-gradient(135deg,#061b49,#0756b5);color:#fff;position:sticky;top:0;z-index:10}
-.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{font-size:24px;font-weight:800}.brand span{color:#ff2424}
-nav a{color:white;text-decoration:none;margin-left:18px;font-weight:600}
-.hero{max-width:1100px;margin:auto;padding:35px 20px 20px;display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
-.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.05;margin-bottom:14px}
-.hero h1 span{color:#e71919}.hero p{font-size:20px;color:#52667a;margin-bottom:22px}
-.btn{display:inline-block;background:#e71919;color:white;padding:13px 22px;border-radius:9px;text-decoration:none;font-weight:700;margin-right:8px}
-.btn.alt{background:#0b56ad}
-.hero img{width:100%;border-radius:18px;box-shadow:0 15px 45px #0a2d5526}
-section{max-width:1100px;margin:auto;padding:55px 20px}
-.title{text-align:center;font-size:34px;margin-bottom:28px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.card{background:#fff;padding:25px;border-radius:16px;box-shadow:0 8px 28px #16324f12;border-top:5px solid #0b56ad}
-.card h3{font-size:24px;margin-bottom:10px}.card li{margin:7px 0;list-style:none}
-.card li::before{content:"✓";color:#e71919;font-weight:800;margin-right:8px}
-.about{background:#eaf2fb}
-.contact{background:linear-gradient(135deg,#071f4d,#0b5bb8);color:#fff}
-.contact .card{background:#ffffff12;color:#fff;border-top-color:#ff2424}
-footer{text-align:center;background:#061737;color:#d8e6f4;padding:20px}
-@media(max-width:760px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}nav{display:none}.hero{padding-top:25px}}
+
+*{
+
+  box-sizing:border-box;
+
+  margin:0;
+
+  padding:0;
+
+}
+
+html{
+
+  scroll-behavior:smooth;
+
+}
+
+body{
+
+  font-family:Arial,"Noto Sans Bengali",sans-serif;
+
+  background:#f5f8fc;
+
+  color:#102a43;
+
+  line-height:1.6;
+
+}
+
+/* HEADER */
+
+header{
+
+  background:linear-gradient(135deg,#061b49,#0756b5);
+
+  color:#fff;
+
+  position:sticky;
+
+  top:0;
+
+  z-index:1000;
+
+  box-shadow:0 4px 18px #0002;
+
+}
+
+.nav{
+
+  max-width:1100px;
+
+  margin:auto;
+
+  padding:14px 20px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:20px;
+
+}
+
+.brand{
+
+  font-size:24px;
+
+  font-weight:800;
+
+}
+
+.brand span{
+
+  color:#ff2424;
+
+}
+
+nav a{
+
+  color:white;
+
+  text-decoration:none;
+
+  margin-left:18px;
+
+  font-weight:600;
+
+}
+
+nav a:hover{
+
+  color:#ffd400;
+
+}
+
+/* HERO */
+
+.hero{
+
+  max-width:1100px;
+
+  margin:auto;
+
+  padding:45px 20px 30px;
+
+  display:grid;
+
+  grid-template-columns:1.05fr .95fr;
+
+  gap:28px;
+
+  align-items:center;
+
+}
+
+.hero h1{
+
+  font-size:clamp(38px,6vw,66px);
+
+  line-height:1.05;
+
+  margin-bottom:14px;
+
+}
+
+.hero h1 span{
+
+  color:#e71919;
+
+}
+
+.hero p{
+
+  font-size:20px;
+
+  color:#52667a;
+
+  margin-bottom:22px;
+
+}
+
+.hero img{
+
+  width:100%;
+
+  border-radius:18px;
+
+  box-shadow:0 15px 45px #0a2d5526;
+
+}
+
+/* BUTTONS */
+
+.btn{
+
+  display:inline-block;
+
+  background:#e71919;
+
+  color:white;
+
+  padding:13px 22px;
+
+  border-radius:9px;
+
+  text-decoration:none;
+
+  font-weight:700;
+
+  margin:5px 5px 5px 0;
+
+  transition:.3s;
+
+}
+
+.btn:hover{
+
+  transform:translateY(-2px);
+
+  opacity:.9;
+
+}
+
+.btn.alt{
+
+  background:#0b56ad;
+
+}
+
+.btn.green{
+
+  background:#16a34a;
+
+}
+
+/* SECTIONS */
+
+section{
+
+  max-width:1100px;
+
+  margin:auto;
+
+  padding:60px 20px;
+
+}
+
+.title{
+
+  text-align:center;
+
+  font-size:34px;
+
+  margin-bottom:30px;
+
+}
+
+/* SERVICES */
+
+.grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:20px;
+
+}
+
+.card{
+
+  background:#fff;
+
+  padding:25px;
+
+  border-radius:16px;
+
+  box-shadow:0 8px 28px #16324f12;
+
+  border-top:5px solid #0b56ad;
+
+}
+
+.card h3{
+
+  font-size:24px;
+
+  margin-bottom:10px;
+
+}
+
+.card li{
+
+  margin:7px 0;
+
+  list-style:none;
+
+}
+
+.card li::before{
+
+  content:"✓";
+
+  color:#e71919;
+
+  font-weight:800;
+
+  margin-right:8px;
+
+}
+
+/* ABOUT */
+
+.about{
+
+  background:#eaf2fb;
+
+  max-width:none;
+
+}
+
+.about-content{
+
+  max-width:800px;
+
+  margin:auto;
+
+  text-align:center;
+
+  font-size:18px;
+
+}
+
+/* CONTACT */
+
+.contact{
+
+  max-width:none;
+
+  background:linear-gradient(135deg,#071f4d,#0b5bb8);
+
+  color:#fff;
+
+}
+
+.contact .grid{
+
+  max-width:900px;
+
+  margin:auto;
+
+}
+
+.contact .card{
+
+  background:#ffffff12;
+
+  color:#fff;
+
+  border-top-color:#ff2424;
+
+}
+
+.contact .card p{
+
+  font-size:18px;
+
+}
+
+/* CONTACT BUTTON AREA */
+
+.contact-buttons{
+
+  text-align:center;
+
+  margin-top:30px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+  text-align:center;
+
+  background:#061737;
+
+  color:#d8e6f4;
+
+  padding:22px 15px;
+
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp-float{
+
+  position:fixed;
+
+  width:58px;
+
+  height:58px;
+
+  right:20px;
+
+  bottom:20px;
+
+  background:#25D366;
+
+  color:white;
+
+  border-radius:50%;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-decoration:none;
+
+  font-size:29px;
+
+  box-shadow:0 5px 20px #0004;
+
+  z-index:999;
+
+  transition:.3s;
+
+}
+
+.whatsapp-float:hover{
+
+  transform:scale(1.08);
+
+}
+
+/* MOBILE */
+
+@media(max-width:760px){
+
+  .nav{
+
+    padding:12px 15px;
+
+  }
+
+  .brand{
+
+    font-size:19px;
+
+  }
+
+  nav{
+
+    display:none;
+
+  }
+
+  .hero{
+
+    grid-template-columns:1fr;
+
+    padding-top:30px;
+
+  }
+
+  .hero h1{
+
+    font-size:43px;
+
+  }
+
+  .hero p{
+
+    font-size:18px;
+
+  }
+
+  .grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+  section{
+
+    padding:45px 15px;
+
+  }
+
+  .title{
+
+    font-size:29px;
+
+  }
+
+  .card{
+
+    padding:20px;
+
+  }
+
+}
+
 </style>
+
 </head>
+
 <body>
+
+<!-- HEADER -->
+
 <header>
-<div class="nav">
-<div class="brand">ZIA <span>MOBILE CARE</span></div>
-<nav><a href="#services">সেবা</a><a href="#about">আমাদের সম্পর্কে</a><a href="#contact">যোগাযোগ</a></nav>
-</div>
+
+  <div class="nav">
+
+    <div class="brand">
+
+      ZIA <span>MOBILE CARE</span>
+
+    </div>
+
+    <nav>
+
+      <a href="#home">হোম</a>
+
+      <a href="#services">সেবা</a>
+
+      <a href="#about">আমাদের সম্পর্কে</a>
+
+      <a href="#contact">যোগাযোগ</a>
+
+    </nav>
+
+  </div>
+
 </header>
 
 <main>
-<section class="hero">
-<div>
-<p style="color:#0b56ad;font-weight:800">আপনার মোবাইল, আমাদের যত্ন</p>
-<h1>জিয়া <span>মোবাইল কেয়ার</span></h1>
-<p>মোবাইল সফটওয়্যার ও হার্ডওয়্যার সার্ভিসের জন্য নির্ভরযোগ্য সেবা।</p>
-<a class="btn" href="#services">সেবাসমূহ দেখুন</a>
-<a class="btn alt" href="#contact">যোগাযোগ</a>
-</div>
-<div>
-<img src="zia-mobile-care-poster.png" alt="জিয়া মোবাইল কেয়ার পোস্টার">
-</div>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div>
+
+    <p style="color:#0b56ad;font-weight:800">
+
+      আপনার মোবাইল, আমাদের যত্ন ❤️
+
+    </p>
+
+    <h1>
+
+      জিয়া <span>মোবাইল কেয়ার</span>
+
+    </h1>
+
+    <p>
+
+      মোবাইল সফটওয়্যার ও হার্ডওয়্যার সার্ভিসের জন্য
+
+      নির্ভরযোগ্য ও যত্নশীল সেবা।
+
+    </p>
+
+    <a class="btn" href="#services">
+
+      🔧 সেবাসমূহ
+
+    </a>
+
+    <a class="btn alt" href="tel:+966504851461">
+
+      📞 এখনই কল করুন
+
+    </a>
+
+    <a class="btn green"
+
+       href="https://wa.me/966504851461"
+
+       target="_blank">
+
+      💬 WhatsApp
+
+    </a>
+
+  </div>
+
+  <div>
+
+    <img
+
+      src="zia-mobile-care-poster.png"
+
+      alt="জিয়া মোবাইল কেয়ার পোস্টার">
+
+  </div>
+
 </section>
+
+<!-- SERVICES -->
 
 <section id="services">
-<h2 class="title">আমাদের সেবা</h2>
-<div class="grid">
-<div class="card"><h3>🔧 Hardware Service</h3>
-<ul>
-<li>ডিসপ্লে পরিবর্তন</li><li>ব্যাটারি পরিবর্তন</li><li>চার্জিং সমস্যা সমাধান</li><li>মাদারবোর্ড রিপেয়ার</li><li>পানি নষ্ট মোবাইল রিপেয়ার</li><li>সকল ধরনের হার্ডওয়্যার সমস্যা</li>
-</ul></div>
-<div class="card"><h3>💻 Software Service</h3>
-<ul>
-<li>Android Software / Flash</li><li>iOS Software ও Update</li><li>FRP Unlock</li><li>Pattern / PIN Unlock</li><li>IMEI Repair</li><li>Apps Install / Remove</li>
-</ul></div>
-</div>
+
+  <h2 class="title">
+
+    🛠️ আমাদের সেবা
+
+  </h2>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <h3>🔧 Hardware Service</h3>
+
+      <ul>
+
+        <li>ডিসপ্লে পরিবর্তন</li>
+
+        <li>ব্যাটারি পরিবর্তন</li>
+
+        <li>চার্জিং সমস্যা সমাধান</li>
+
+        <li>মাদারবোর্ড রিপেয়ার</li>
+
+        <li>পানি নষ্ট মোবাইল রিপেয়ার</li>
+
+        <li>সকল ধরনের হার্ডওয়্যার সমস্যা</li>
+
+      </ul>
+
+    </div>
+
+    <div class="card">
+
+      <h3>💻 Software Service</h3>
+
+      <ul>
+
+        <li>Android Software / Flash</li>
+
+        <li>iOS Software ও Update</li>
+
+        <li>FRP Unlock</li>
+
+        <li>Pattern / PIN Unlock</li>
+
+        <li>IMEI Repair</li>
+
+        <li>Apps Install / Remove</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
 </section>
+
+<!-- ABOUT -->
 
 <section id="about" class="about">
-<h2 class="title">জিয়া মোবাইল কেয়ার সম্পর্কে</h2>
-<p style="max-width:800px;margin:auto;text-align:center;font-size:18px">
-স্মার্টফোনের সফটওয়্যার ও হার্ডওয়্যার সমস্যার সমাধানে জিয়া মোবাইল কেয়ার। দ্রুত সার্ভিস, যত্নশীল কাজ এবং মানসম্মত রিপেয়ারের ওপর আমাদের গুরুত্ব।
-</p>
+
+  <h2 class="title">
+
+    ℹ️ জিয়া মোবাইল কেয়ার সম্পর্কে
+
+  </h2>
+
+  <div class="about-content">
+
+    <p>
+
+      স্মার্টফোনের সফটওয়্যার ও হার্ডওয়্যার সমস্যার
+
+      সমাধানে জিয়া মোবাইল কেয়ার।
+
+    </p>
+
+    <br>
+
+    <p>
+
+      দ্রুত সার্ভিস, যত্নশীল কাজ এবং মানসম্মত
+
+      রিপেয়ারের ওপর আমাদের গুরুত্ব।
+
+    </p>
+
+  </div>
+
 </section>
+
+<!-- CONTACT -->
 
 <section id="contact" class="contact">
-<h2 class="title">যোগাযোগ করুন</h2>
-<div class="grid">
-<div class="card"><h3>📞 ফোন</h3><p>0504851461</p></div>
-<div class="card"><h3>📍 ঠিকানা</h3><p>রিয়াদ, শিফা সানাইয়া</p></div>
-</div>
+
+  <h2 class="title">
+
+    📞 যোগাযোগ করুন
+
+  </h2>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <h3>📞 ফোন</h3>
+
+      <p>
+
+        0504851461
+
+      </p>
+
+      <br>
+
+      <a
+
+        class="btn"
+
+        href="tel:+966504851461">
+
+        Call Now
+
+      </a>
+
+    </div>
+
+    <div class="card">
+
+      <h3>📍 ঠিকানা</h3>
+
+      <p>
+
+        রিয়াদ, শিফা সানাইয়া
+
+      </p>
+
+      <br>
+
+      <a
+
+        class="btn"
+
+        href="https://www.google.com/maps/search/?api=1&query=Shifa+Sanaiya+Riyadh"
+
+        target="_blank">
+
+        🗺️ Google Maps
+
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="contact-buttons">
+
+    <a
+
+      class="btn green"
+
+      href="https://wa.me/966504851461"
+
+      target="_blank">
+
+      💬 WhatsApp এ যোগাযোগ করুন
+
+    </a>
+
+    <!-- আপনার Facebook Page-এর লিংক এখানে বসাবেন -->
+
+    <a
+
+      class="btn alt"
+
+      href="#"
+
+      onclick="alert('Facebook Page Link পরে এখানে যোগ করা হবে।'); return false;">
+
+      👍 Facebook Page
+
+    </a>
+
+  </div>
+
 </section>
+
 </main>
 
-<footer>© 2026 ZIA MOBILE CARE — Mobile Software & Hardware</footer>
+<!-- FOOTER -->
+
+<footer>
+
+  <p>
+
+    © 2026 ZIA MOBILE CARE
+
+  </p>
+
+  <p>
+
+    Mobile Software & Hardware Service
+
+  </p>
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+
+  class="whatsapp-float"
+
+  href="https://wa.me/966504851461"
+
+  target="_blank"
+
+  aria-label="WhatsApp">
+
+  💬
+
+</a>
+
 </body>
+
 </html>
